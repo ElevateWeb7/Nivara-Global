@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zestroa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav>
+        <h1><a href="#home">Zestroa</a></h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul id="navMenu">
+          <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+          <li><a href="#rooms" onclick="closeMenu()">Rooms</a></li>
+          <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Zestroa</h2>
+      <p>Delicious food, cozy stay, and a warm welcome await you!</p>
+    </div>
+  </section>
+
+  <section id="about" class="section container">
+    <h2>About Us</h2>
+    <p>Zestroa is known for its authentic flavors and comfortable lodging. We aim to provide a homely atmosphere to all our guests with a delightful culinary experience.</p>
+  </section>
+
+  <section id="menu" class="section container">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>South Indian Thali</h3>
+        <p>A complete traditional meal served with love.</p>
+      </div>
+      <div class="menu-item">
+        <h3>North Indian Combo</h3>
+        <p>Spicy, flavorful, and absolutely delicious!</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chinese Delights</h3>
+        <p>From noodles to fried rice, all your favorites.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="rooms" class="section container">
+    <h2>Our Rooms</h2>
+    <div class="room-grid">
+      <div class="room-card">
+        <h3>Standard Room</h3>
+        <p>AC room with comfortable beds and clean washrooms.</p>
+      </div>
+      <div class="room-card">
+        <h3>Deluxe Room</h3>
+        <p>Spacious room with premium amenities and room service.</p>
+      </div>
+    </div>
+  </section>
+
+ <section id="gallery" class="section container">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="images/food1.jpg" alt="Delicious Food"></div>
+    <div class="gallery-item"><img src="images/food2.jpg" alt="Meal Presentation"></div>
+    <div class="gallery-item"><img src="images/room1.jpg" alt="Comfortable Room"></div>
+    <div class="gallery-item"><img src="images/room2.jpg" alt="Luxury Room"></div>
+    <div class="gallery-item"><img src="images/hotel1.jpg" alt="Hotel Exterior"></div>
+    <div class="gallery-item"><img src="images/ambience1.jpg" alt="Dining Ambience"></div>
+  </div>
+</section>
+
+
+  <section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 30px;">
+      Have questions or want to reserve a table? Reach out to Zestroa and we’ll get back to you as soon as possible.
+    </p>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+   <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.855036598781!2d72.87765561437864!3d19.07609098709761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63d3c4b0aef%3A0x924c8a1b8161d63e!2sMumbai!5e0!3m2!1sen!2sin!4v1687182088201"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Zestroa. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('active');
+    }
+
+    function closeMenu() {
+      const nav = document.getElementById('navMenu');
+      if (nav.classList.contains('active')) {
+        nav.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
