@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Products — Admin</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div class="admin-shell">
+<aside class="admin-sidebar">
+<div class="brand">NivaraGlobal</div>
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="users.html">User Management</a>
+<a href="products.html" class="active">Product Management</a>
+<a href="orders.html">Order Management</a>
+</nav>
+</aside>
+<main class="admin-main">
+<header class="admin-top"><div class="search"><input placeholder="Search products..." /></div></header>
+<section class="admin-content">
+<h1>Product Management</h1>
+<div class="panel">
+<table class="table">
+<thead><tr><th>Product</th><th>Seller</th><th>Price</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Premium Tissue Pack</td><td>Nivara Care</td><td>₹120</td><td>Approved</td><td><button class="btn small" onclick="toast('View product UI only')">View</button></td></tr>
+<tr><td>Toilet Roll 35m</td><td>CleanPaper</td><td>₹45</td><td>Pending</td><td><button class="btn small" onclick="toast('View product UI only')">Review</button></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+</div>
+<script src="../js/script.js"></script>
+</body></html>

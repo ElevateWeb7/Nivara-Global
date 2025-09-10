@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Seller Dashboard — NivaraGlobal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-shell">
+<header class="site-header">
+<div class="brand" onclick="goHome()">NivaraGlobal</div>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="buyer.html">Buyers</a>
+<a href="seller.html" class="active">Sellers</a>
+<a href="admin/dashboard.html">Admin</a>
+</nav>
+<div class="actions">
+<button class="btn ghost" onclick="openSignIn()">Sign in</button>
+<button class="btn primary" onclick="createListing()">Add Listing</button>
+<button class="mobile-menu" id="mobileBtn3">☰</button>
+</div>
+</header>
+
+
+<main class="container">
+<h1>Seller Dashboard</h1>
+<p class="muted">Manage listings, view analytics and process orders.</p>
+
+
+<section class="grid-2 mt-4">
+<div class="panel">
+<h3>Listings</h3>
+<div class="listing">
+<div class="left">
+<img src="https://images.unsplash.com/photo-1515162305282-9d8f6c0b7f2a?w=800&q=60" alt="list" />
+</div>
+<div class="right">
+<div class="title">Soft Tissue 2-ply</div>
+<div class="meta">₹120 • 100 in stock</div>
+<div class="actions">
+<button class="btn small" onclick="toast('Edit listing UI only')">Edit</button>
+<button class="btn small ghost" onclick="toast('Toggle status UI only')">Toggle Active</button>
+</div>
+</div>
+</div>
+<div class="listing">
+<div class="left">
+<img src="https://images.unsplash.com/photo-1585386959984-a415522dc1b9?w=800&q=60" alt="list" />
+</div>
+<div class="right">
+<div class="title">Toilet Roll 35m</div>
+<div class="meta">₹45 • Out of stock</div>
+<div class="actions">
+<button class="btn small" onclick="toast('Edit listing UI only')">Edit</button>
+<button class="btn small ghost" onclick="toast('Toggle status UI only')">Toggle Active</button>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<div class="panel">
+<h3>Analytics (30d)</h3>
+<div class="metric">Revenue: <strong>₹1,24,300</strong></div>
+<div class="metric">Orders: <strong>1,240</strong></div>
+<div class="metric">Payout pending: <strong>₹9,200</strong></div>
+<button class="btn" onclick="toast('Payout requested — UI only')">Request Payout</button>
+</div>
+</section>
+
+
+</main>
+
+
+<footer class="site-footer">
+<div>© <span id="year3"></span> NivaraGlobal — All rights reserved.</div>
+<div class="footer-links">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+<a href="#">Contact</a>
+</div>
+</footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Users — Admin</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div class="admin-shell">
+<aside class="admin-sidebar">
+<div class="brand">NivaraGlobal</div>
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="users.html" class="active">User Management</a>
+<a href="products.html">Product Management</a>
+<a href="orders.html">Order Management</a>
+<a href="subscriptions.html">Subscriptions</a>
+<a href="payments.html">Payments</a>
+<a href="reports.html">Reports</a>
+<a href="content.html">Content</a>
+<a href="support.html">Support</a>
+<a href="settings.html">Settings</a>
+</nav>
+</aside>
+<main class="admin-main">
+<header class="admin-top"><div class="search"><input placeholder="Search users..." /></div></header>
+<section class="admin-content">
+<h1>User Management</h1>
+<div class="panel">
+<table class="table">
+<thead><tr><th>Name</th><th>Email</th><th>Role</th><th>KYC</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Ravi</td><td>ravi@example.com</td><td>Buyer</td><td>Verified</td><td>Active</td><td><button class="btn small" onclick="toast('Open KYC modal UI only')">Verify</button></td></tr>
+<tr><td>Sneha</td><td>sneha@example.com</td><td>Seller</td><td>Pending</td><td>Active</td><td><button class="btn small" onclick="toast('Open KYC modal UI only')">Review</button></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+</div>
+<script src="../js/script.js"></script>
+</body></html>

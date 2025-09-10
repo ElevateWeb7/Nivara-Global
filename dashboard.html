@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Admin Dashboard — NivaraGlobal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="admin-shell">
+<aside class="admin-sidebar">
+<div class="brand">NivaraGlobal</div>
+<nav>
+<a href="dashboard.html" class="active">Dashboard</a>
+<a href="users.html">User Management</a>
+<a href="products.html">Product Management</a>
+<a href="orders.html">Order Management</a>
+<a href="subscriptions.html">Subscriptions</a>
+<a href="payments.html">Payments</a>
+<a href="reports.html">Reports</a>
+<a href="content.html">Content</a>
+<a href="support.html">Support</a>
+<a href="settings.html">Settings</a>
+</nav>
+</aside>
+
+
+<main class="admin-main">
+<header class="admin-top">
+<div class="search"><input placeholder="Search users, orders or products" /></div>
+<div class="top-actions">
+<button class="btn small ghost" onclick="toast('Logged out — UI only')">Logout</button>
+</div>
+</header>
+<section class="admin-content">
+<h1>Dashboard</h1>
+<div class="kpi-grid">
+<div class="kpi">Users<br><strong>10,450</strong></div>
+<div class="kpi">Sellers<br><strong>1,240</strong></div>
+<div class="kpi">Orders<br><strong>28,300</strong></div>
+<div class="kpi">Revenue (MTD)<br><strong>₹12,45,000</strong></div>
+</div>
+
+
+<div class="tables mt-6">
+<h3>Recent Orders</h3>
+<table class="table">
+<thead><tr><th>Order</th><th>Buyer</th><th>Seller</th><th>Total</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>#ORD-10234</td><td>Ravi</td><td>Nivara Care</td><td>₹12,400</td><td>Shipped</td><td><button class="btn small" onclick="toast('Opening order UI only')">View</button></td></tr>
+<tr><td>#ORD-10198</td><td>Priya</td><td>CleanPaper</td><td>₹3,299</td><td>Processing</td><td><button class="btn small" onclick="toast('Opening order UI only')">View</button></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+</main>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>

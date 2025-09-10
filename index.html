@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>NivaraGlobal — Trading Marketplace</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-shell">
+<header class="site-header">
+<div class="brand" onclick="goHome()">NivaraGlobal</div>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="buyer.html">Buyers</a>
+<a href="seller.html">Sellers</a>
+<a href="admin/dashboard.html">Admin</a>
+</nav>
+<div class="actions">
+<button class="btn ghost" onclick="openSignIn()">Sign in</button>
+<button class="btn primary" onclick="goSeller()">Get Started</button>
+<button class="mobile-menu" id="mobileBtn">☰</button>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<div class="hero-left">
+<h1>NivaraGlobal — Global Trading Marketplace</h1>
+<p>Connect buyers and sellers across the world. B2B & B2C trading made simple — catalogs, quotes, orders and secure payments.</p>
+<div class="hero-cta">
+<button class="btn primary" onclick="goSeller()">Start Selling</button>
+<button class="btn ghost" onclick="goBuyer()">Find Products</button>
+<button class="btn outline" onclick="goAdmin()">Admin Panel</button>
+</div>
+<ul class="kpis">
+<li><strong>1,240+</strong><span>Sellers</span></li>
+<li><strong>9,500+</strong><span>Buyers</span></li>
+<li><strong>28,300+</strong><span>Orders</span></li>
+<li><strong>32</strong><span>Countries</span></li>
+</ul>
+</div>
+<div class="hero-right">
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=60" alt="market image">
+</div>
+</section>
+<section class="features">
+<h2>How it works</h2>
+<div class="cards">
+<div class="card">
+<h3>List products</h3>
+<p>Sellers upload rich product catalogs. Smart validation helps keep listings clean.</p>
+</div>
+<div class="card">
+<h3>Discover & Order</h3>
+<p>Buyers browse, request quotes and place orders with order tracking.</p>
+</div>
+<div class="card">
+<h3>Secure Payments</h3>
+<p>Multiple gateways, escrow and easy reconciliation for sellers and admins.</p>
+</div>
+</div>
+</section>
+
+
+<section class="preview">
+<h2>Portal previews</h2>
+<div class="previews">
+<div class="preview-card">
+<img src="https://images.unsplash.com/photo-1515162305282-9d8f6c0b7f2a?w=800&q=60" alt="buyer">
+<h4>Buyer Portal</h4>
+<p>Search, request quotes and manage orders.</p>
+<button class="btn" onclick="goBuyer()">Open Buyer</button>
+</div>
+<div class="preview-card">
+<img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=60" alt="seller">
+<h4>Seller Dashboard</h4>
+<p>Manage listings, analytics and payouts.</p>
+<button class="btn" onclick="goSeller()">Open Seller</button>
+</div>
+<div class="preview-card">
+<img src="https://images.unsplash.com/photo-1526378723370-5b23b5a8c2a9?w=800&q=60" alt="admin">
+<h4>Admin Panel</h4>
+<p>Full control center for users, products, orders and content.</p>
+<button class="btn" onclick="goAdmin()">Open Admin</button>
+</div>
+</div>
+</section>
+
+
+</main>
+<footer class="site-footer">
+<div>© <span id="year"></span> NivaraGlobal — All rights reserved.</div>
+<div class="footer-links">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+<a href="#">Contact</a>
+</div>
+</footer>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

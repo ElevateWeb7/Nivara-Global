@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Buyer Portal — NivaraGlobal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-shell">
+<header class="site-header">
+<div class="brand" onclick="goHome()">NivaraGlobal</div>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="buyer.html" class="active">Buyers</a>
+<a href="seller.html">Sellers</a>
+<a href="admin/dashboard.html">Admin</a>
+</nav>
+<div class="actions">
+<button class="btn ghost" onclick="openSignIn()">Sign in</button>
+<button class="btn primary" onclick="goSeller()">Sell</button>
+<button class="mobile-menu" id="mobileBtn2">☰</button>
+</div>
+</header>
+
+
+<main class="container">
+<h1>Buyer Portal</h1>
+<p class="muted">Search products, request quotes and manage orders.</p>
+
+
+<section class="searchbar">
+<input type="text" id="searchInp" placeholder="Search products, categories or sellers" />
+<button class="btn" onclick="alert('Search simulated — no backend')">Search</button>
+</section>
+
+
+<section class="product-grid">
+<!-- sample products -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1515162305282-9d8f6c0b7f2a?w=800&q=60" alt="product" />
+<div class="p-body">
+<h3>Premium Tissue Pack</h3>
+<div class="meta">Seller: Nivara Care</div>
+<div class="price">₹120</div>
+<div class="p-actions">
+<button class="btn" onclick="toast('Quote requested for Premium Tissue Pack')">Request Quote</button>
+<button class="btn ghost" onclick="toast('Added to favorites (UI only)')">❤</button>
+</div>
+</div>
+</div>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1585386959984-a415522dc1b9?w=800&q=60" alt="product" />
+<div class="p-body">
+<h3>Toilet Roll 35m</h3>
+<div class="meta">Seller: CleanPaper</div>
+<div class="price">₹45</div>
+<div class="p-actions">
+<button class="btn" onclick="toast('Quote requested for Toilet Roll 35m')">Request Quote</button>
+<button class="btn ghost" onclick="toast('Added to favorites (UI only)')">❤</button>
+</div>
+</div>
+</div>
